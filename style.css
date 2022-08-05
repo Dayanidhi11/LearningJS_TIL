@@ -1,0 +1,134 @@
+body{
+    font: 12px 'Montserrat',sans-serif;
+    display: inline-block;
+    margin: 150px 20%;
+}
+
+#topCandleStickScreener{
+    /* margin: 200px 20%; */
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 1020px;
+    height: 650px;
+    /* border: 1px solid black; */
+   /* background-color: rgb(88, 88, 235); */
+}
+.card{
+    /* border: 1px solid rgb(12, 26, 225); */
+    
+    
+    margin-right: 0.66rem;
+
+     border-radius: 4px;
+     box-shadow: 0 0 3px 0 rgb(143 142 142 / 50%);
+     background-color: #fff;
+     padding: 1rem;
+     margin-bottom: 1.5rem;
+     cursor: pointer;
+}
+.card:hover{
+    box-shadow: 3px 3px 5px 0 rgb(143 142 142 / 50%),-3px -3px 5px 0 rgb(143 142 142 / 50%); 
+}
+
+.card .screenerType{
+    color: black;
+
+}
+.screenerType{
+    color: #5c5c5c;
+    font-size: .5625rem;
+    font-weight: 500;
+
+}
+
+.screenerName{
+    color: #000;
+    font-size: .94rem;
+    font-weight: 900;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.screenerDesc{
+    color: #666;
+    font-size: .69rem;
+    text-align: justify;
+}
+/* .screenerComp{
+
+} */
+.count{
+    
+    text-align: right;
+    padding-top: 1rem;
+    color: #002dff;
+}
+
+table{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+
+.ltp{
+    text-align: end;
+}
+
+.perfD1{
+    
+    font-weight: 100;
+    text-align: left;
+    color: #00af4b;
+}
+
+.negative{
+    margin-left: 15px;
+}
+
+.negative::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: url(https://img.etimg.com/photo/msid-76888274,quality-100/candlestick-screener-sprite.jpg);
+    background-repeat: no-repeat;
+    background-size: 251px 20px;
+    width: 5px;
+    height: 9px;
+    background-position: -96px -1px;
+    margin-left: -8px;
+    margin-top: 2px;
+}
+
+.positive{
+    margin-left: 15px;
+}
+
+.positive::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: url(https://img.etimg.com/photo/msid-76888274,quality-100/candlestick-screener-sprite.jpg);
+    background-repeat: no-repeat;
+    background-size: 251px 20px;
+    width: 6px;
+    height: 10px;
+    background-position: -106px 0;
+    margin-left: -8px;
+    margin-top: 2px;
+}
+
